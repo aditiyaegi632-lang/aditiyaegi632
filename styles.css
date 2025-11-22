@@ -194,6 +194,24 @@ body {
   color: var(--muted);
 }
 
+.profile-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: .5rem;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.profile-meta a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.profile-meta a:hover {
+  text-decoration: underline;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
