@@ -29,7 +29,7 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  font-size: 10px;
+  font-size: 15px;
   background: var(--bg);
   color: var(--text);
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto;
@@ -192,24 +192,6 @@ body {
 .lead {
   margin: 0 0 .75rem;
   color: var(--muted);
-}
-
-.profile-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: .5rem;
-  font-size: .9rem;
-  color: var(--muted);
-}
-
-.profile-meta a {
-  color: var(--accent2);
-  text-decoration: none;
-}
-
-.profile-meta a:hover {
-  text-decoration: underline;
 }
 
 /* Buttons */
