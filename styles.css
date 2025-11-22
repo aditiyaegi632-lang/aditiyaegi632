@@ -342,10 +342,6 @@ body {
   transition: width 1.2s cubic-bezier(.2,.9,.3,1);
 }
 
-.section {
-  scroll-margin-top: 90px;
-}
-
 
 /* Contact */
 .contact-grid {
