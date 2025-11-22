@@ -11,15 +11,10 @@
   <!-- Stylesheet utama -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Meta untuk theme color (opsional) -->
   <meta name="theme-color" content="#ff6a00">
 </head>
 <body>
-  <!--
-    HEADER / NAVBAR
-    Menampilkan nama, jabatan, dan navigasi anchor ke section
-    Header sekarang memiliki id="site-header" agar mudah dimanipulasi oleh JS
-  -->
+
   <header id="site-header" class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -29,7 +24,6 @@
         </div>
       </div>
 
-      <!-- Tombol hamburger untuk mobile -->
       <button class="nav-toggle" aria-label="Buka navigasi" aria-expanded="false">
         <span class="hamburger"></span>
       </button>
@@ -46,12 +40,9 @@
     </div>
   </header>
 
-  <!-- HERO / HEADER UTAMA -->
   <section class="hero container" aria-labelledby="hero-title">
     <div class="hero-grid">
-      <!-- Foto profil (placeholder SVG) -->
       <div class="profile-card reveal">
-        <!-- Placeholder avatar, ganti dengan <img> jika ingin -->
         <svg class="avatar" viewBox="0 0 120 120" aria-hidden="true">
           <defs>
             <linearGradient id="grad" x1="0" x2="1">
@@ -73,10 +64,9 @@
         </div>
       </div>
 
-      <!-- Ringkasan singkat -->
       <div class="summary reveal">
         <h3>Tentang Singkat</h3>
-        <p>Saya fokus membangun solusi web yang responsif dan mudah digunakan. Minat: pengembangan front-end, integrasi backend sederhana, dan visualisasi data.</p>
+        <p>Saya fokus membangun solusi web yang responsif dan mudah digunakan.</p>
 
         <ul class="highlights">
           <li>Pengembangan Web: HTML5, CSS3, JavaScript</li>
@@ -92,11 +82,10 @@
     </div>
   </section>
 
-  <!-- TENTANG SAYA (detail) -->
   <main>
     <section id="about" class="section container reveal">
       <h2 class="section-title">Tentang Saya</h2>
-      <p class="section-desc">Saya senang menggabungkan aspek teknis dan desain untuk menciptakan pengalaman pengguna yang intuitif. Saya aktif mencari kesempatan berkolaborasi dalam proyek nyata untuk meningkatkan keterampilan praktis.</p>
+      <p class="section-desc">Saya senang menggabungkan aspek teknis dan desain.</p>
 
       <div class="about-grid">
         <div class="card">
@@ -110,11 +99,10 @@
       </div>
     </section>
 
-    <!-- PENDIDIKAN -->
     <section id="education" class="section container reveal">
       <h2 class="section-title">Pendidikan</h2>
+
       <div class="timeline">
-        <!-- Setiap item pendidikan -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
@@ -129,13 +117,12 @@
           <div class="timeline-content">
             <h3>SMA IPA</h3>
             <span class="muted">Sekolah Menengah Atas Contoh — 2019 — 2021</span>
-            <p>Dasar kuat pada matematika dan logika yang membantu dalam belajar pemrograman dan analisis.</p>
+            <p>Dasar kuat pada matematika dan logika.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PENGALAMAN / ORGANISASI / PROYEK -->
     <section id="experience" class="section container reveal">
       <h2 class="section-title">Organisasi & Proyek</h2>
 
@@ -143,37 +130,35 @@
         <article class="exp-card">
           <h3>Anggota Himpunan Mahasiswa Sistem Informasi</h3>
           <span class="muted">2023 — Sekarang</span>
-          <p>Berperan dalam tim pengembangan website acara kampus dan membantu mengelola registrasi online.</p>
+          <p>Berperan dalam tim pengembangan website acara kampus.</p>
         </article>
 
         <article class="exp-card">
           <h3>Proyek: Dashboard Analitik Sederhana</h3>
           <span class="muted">2024</span>
-          <p>Membangun dashboard menggunakan HTML/CSS/JS dan Chart.js untuk visualisasi data sederhana (dataset akademik).</p>
+          <p>Membangun dashboard menggunakan HTML/CSS/JS dan Chart.js.</p>
         </article>
 
         <article class="exp-card">
           <h3>Volunteer: Workshop Pengembangan Web</h3>
           <span class="muted">2022</span>
-          <p>Memberi materi dasar HTML dan CSS kepada siswa SMA sebagai bagian dari kegiatan pengabdian masyarakat.</p>
+          <p>Memberi materi dasar HTML dan CSS kepada siswa SMA.</p>
         </article>
       </div>
     </section>
 
-    <!-- KEAHLIAN TEKNIS DENGAN PROGRESS BAR -->
     <section id="skills" class="section container reveal">
       <h2 class="section-title">Keahlian Teknis</h2>
-      <p class="section-desc">Berikut beberapa keahlian teknis yang saya kuasai, diukur secara perkiraan pengalaman.</p>
+      <p class="section-desc">Keahlian yang dikuasai.</p>
 
       <div class="skills-grid">
-        <!-- Setiap skill menggunakan atribut data untuk persentase -->
         <div class="skill">
           <div class="skill-head">
             <span>HTML & CSS</span>
             <span class="skill-percent">95%</span>
           </div>
-          <div class="progress" data-percentage="95" aria-hidden="true">
-            <div class="progress-bar" style="width: 0%"></div>
+          <div class="progress" data-percentage="95">
+            <div class="progress-bar"></div>
           </div>
         </div>
 
@@ -182,8 +167,8 @@
             <span>JavaScript</span>
             <span class="skill-percent">85%</span>
           </div>
-          <div class="progress" data-percentage="85" aria-hidden="true">
-            <div class="progress-bar" style="width: 0%"></div>
+          <div class="progress" data-percentage="85">
+            <div class="progress-bar"></div>
           </div>
         </div>
 
@@ -192,8 +177,8 @@
             <span>React / Vue (Dasar)</span>
             <span class="skill-percent">70%</span>
           </div>
-          <div class="progress" data-percentage="70" aria-hidden="true">
-            <div class="progress-bar" style="width: 0%"></div>
+          <div class="progress" data-percentage="70">
+            <div class="progress-bar"></div>
           </div>
         </div>
 
@@ -202,36 +187,35 @@
             <span>SQL & Database</span>
             <span class="skill-percent">65%</span>
           </div>
-          <div class="progress" data-percentage="65" aria-hidden="true">
-            <div class="progress-bar" style="width: 0%"></div>
+          <div class="progress" data-percentage="65">
+            <div class="progress-bar"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KONTAK DENGAN FORM (VALIDASI SEDERHANA) -->
     <section id="contact" class="section container reveal">
       <h2 class="section-title">Kontak</h2>
-      <p class="section-desc">Ingin berkolaborasi atau menanyakan sesuatu? Isi pesan di bawah:</p>
+      <p class="section-desc">Isi pesan di bawah:</p>
 
       <div class="contact-grid">
         <form id="contact-form" class="contact-form" novalidate>
           <div class="form-row">
             <label for="name">Nama</label>
             <input id="name" name="name" required placeholder="Nama lengkap" />
-            <small class="error" id="error-name" aria-live="polite"></small>
+            <small class="error" id="error-name"></small>
           </div>
 
           <div class="form-row">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required placeholder="email@contoh.com" />
-            <small class="error" id="error-email" aria-live="polite"></small>
+            <small class="error" id="error-email"></small>
           </div>
 
           <div class="form-row">
             <label for="message">Pesan</label>
             <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
-            <small class="error" id="error-message" aria-live="polite"></small>
+            <small class="error" id="error-message"></small>
           </div>
 
           <div class="form-actions">
@@ -239,29 +223,25 @@
             <button type="reset" class="btn btn-outline">Reset</button>
           </div>
 
-          <!-- Tempat menampilkan notifikasi sukses -->
-          <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+          <div id="form-status" class="form-status"></div>
         </form>
 
-        <!-- Info kontak tambahan -->
         <aside class="contact-info">
           <h4>Info Kontak</h4>
           <p><strong>Email:</strong> <a href="mailto:egi@example.com">egi@example.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/egi</a></p>
-          <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/egi</a></p>
+          <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/egi</a></p>
+          <p><strong>GitHub:</strong> <a href="#">github.com/egi</a></p>
         </aside>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER SEDERHANA -->
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="year"></span> Egi Candra Aditya — Mahasiswa Sistem Informasi</p>
     </div>
   </footer>
 
-  <!-- Script utama -->
   <script src="script.js"></script>
 </body>
 </html>
