@@ -102,7 +102,9 @@ function animateProgressBars(){
    Scroll-spy
    - Highlight nav link aktif berdasarkan section yang terlihat
    ---------------------------- */
-const sections = document.querySelectorAll('main section, #about, #education, #experience, #skills, #contact');
+const sections = document.querySelectorAll(
+  '#about-detail, #education, #experience, #skills, #contact'
+);
 const spyOptions = {
   root: null,
   rootMargin: '-40% 0px -40% 0px',
