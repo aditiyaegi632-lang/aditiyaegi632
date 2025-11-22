@@ -1,49 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Egi Candra Aditya — Resume</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet utama -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio – Egi</title>
   <link rel="stylesheet" href="styles.css">
-
-  <meta name="theme-color" content="#ff6a00">
 </head>
+
 <body>
 
-  <header id="site-header" class="site-header">
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <div class="brand-text">
-          <h1 class="name">Egi Candra Aditya</h1>
-          <p class="role">Mahasiswa Sistem Informasi</p>
-        </div>
+        <p class="name">Egi</p>
+        <p class="role">Mahasiswa Sistem Informasi</p>
       </div>
 
-      <button class="nav-toggle" aria-label="Buka navigasi" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="hamburger"></span>
       </button>
 
       <nav class="site-nav" id="site-nav">
-  <ul>
-    <li><a href="#about-detail" class="nav-link">Tentang</a></li>
-    <li><a href="#education" class="nav-link">Pendidikan</a></li>
-    <li><a href="#experience" class="nav-link">Organisasi / Proyek</a></li>
-    <li><a href="#skills" class="nav-link">Keahlian</a></li>
-    <li><a href="#contact" class="nav-link cta">Kontak</a></li>
-  </ul>
-</nav>
-
+        <ul>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li><a href="#experience" class="nav-link">Organisasi / Proyek</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#contact" class="nav-link cta">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION sekarang punya id="about" agar sesuai navbar -->
-  <section id="about" class="hero container" aria-labelledby="hero-title">
+
+  <!-- HERO -->
+  <section class="hero container reveal" id="hero">
     <div class="hero-grid">
+
       <div class="profile-card reveal">
         <svg class="avatar" viewBox="0 0 120 120" aria-hidden="true">
           <defs>
@@ -59,8 +53,9 @@
         <div class="profile-info">
           <h2 id="hero-title">Halo, saya Egi</h2>
           <p class="lead">Mahasiswa Sistem Informasi yang tertarik pada pengembangan aplikasi web, pengalaman pengguna, dan analisis data.</p>
+
           <div class="profile-meta">
-            <span><strong>Email:</strong> <a href="mailto:egi@example.com">aditiyaegi632@gmail.com</a></span>
+            <span><strong>Email:</strong> <a href="mailto:aditiyaegi632@gmail.com">aditiyaegi632@gmail.com</a></span>
             <span><strong>Lokasi:</strong> Indonesia</span>
           </div>
         </div>
@@ -81,169 +76,139 @@
           <a href="#skills" class="btn btn-outline">Lihat Keahlian</a>
         </div>
       </div>
+
     </div>
   </section>
 
+
+  <!-- MAIN CONTENT (benar, hanya 1 main) -->
   <main>
 
-    <!-- SECTION TENTANG — ID diganti agar tidak bentrok dengan hero -->
-    <section id="about-detail" class="section container reveal">
+    <!-- ABOUT -->
+    <section class="section container reveal" id="about">
       <h2 class="section-title">Tentang Saya</h2>
-      <p class="section-desc">Saya senang menggabungkan aspek teknis dan desain.</p>
+      <p class="section-desc">Profil singkat, latar belakang, dan motivasi saya.</p>
 
       <div class="about-grid">
         <div class="card">
-          <h4>Minat Utama</h4>
-          <p>UI/UX, Front-end Development, Data Visualization, Automasi Proses</p>
+          Saya adalah mahasiswa Sistem Informasi yang memiliki minat pada pengembangan web modern dan desain antarmuka.
         </div>
         <div class="card">
-          <h4>Keahlian Non-teknis</h4>
-          <p>Kolaborasi tim, komunikasi, manajemen waktu, problem solving</p>
+          Selain itu, saya tertarik pada analisis data dan bagaimana teknologi dapat memberikan solusi nyata.
         </div>
       </div>
     </section>
 
-    <section id="education" class="section container reveal">
+
+    <!-- EDUCATION -->
+    <section class="section container reveal" id="education">
       <h2 class="section-title">Pendidikan</h2>
-
       <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>S1 Sistem Informasi</h3>
-            <span class="muted">Universitas Contoh — 2022 — Sekarang</span>
-            <p>Memfokuskan studi pada sistem informasi bisnis, pengembangan aplikasi, dan analisis data.</p>
-          </div>
-        </div>
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3>SMA IPA</h3>
-            <span class="muted">Sekolah Menengah Atas Contoh — 2019 — 2021</span>
-            <p>Dasar kuat pada matematika dan logika.</p>
+            <h3>Universitas – Sistem Informasi</h3>
+            <p class="muted">2022 - Sekarang</p>
           </div>
         </div>
+
       </div>
     </section>
 
-    <section id="experience" class="section container reveal">
+
+    <!-- EXPERIENCE -->
+    <section class="section container reveal" id="experience">
       <h2 class="section-title">Organisasi & Proyek</h2>
 
       <div class="exp-grid">
-        <article class="exp-card">
-          <h3>Anggota Himpunan Mahasiswa Sistem Informasi</h3>
-          <span class="muted">2023 — Sekarang</span>
-          <p>Berperan dalam tim pengembangan website acara kampus.</p>
-        </article>
-
-        <article class="exp-card">
-          <h3>Proyek: Dashboard Analitik Sederhana</h3>
-          <span class="muted">2024</span>
-          <p>Membangun dashboard menggunakan HTML/CSS/JS dan Chart.js.</p>
-        </article>
-
-        <article class="exp-card">
-          <h3>Volunteer: Workshop Pengembangan Web</h3>
-          <span class="muted">2022</span>
-          <p>Memberi materi dasar HTML dan CSS kepada siswa SMA.</p>
-        </article>
+        <div class="exp-card">Proyek 1 – Deskripsi singkat</div>
+        <div class="exp-card">Proyek 2 – Deskripsi singkat</div>
+        <div class="exp-card">Proyek 3 – Deskripsi singkat</div>
       </div>
     </section>
 
-    <section id="skills" class="section container reveal">
-      <h2 class="section-title">Keahlian Teknis</h2>
-      <p class="section-desc">Keahlian yang dikuasai.</p>
+
+    <!-- SKILLS -->
+    <section class="section container reveal" id="skills">
+      <h2 class="section-title">Keahlian</h2>
 
       <div class="skills-grid">
         <div class="skill">
           <div class="skill-head">
-            <span>HTML & CSS</span>
-            <span class="skill-percent">95%</span>
+            <span>HTML</span><span>90%</span>
           </div>
-          <div class="progress" data-percentage="95">
+          <div class="progress" data-percentage="90">
             <div class="progress-bar"></div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skill-head">
-            <span>JavaScript</span>
-            <span class="skill-percent">85%</span>
+            <span>CSS</span><span>80%</span>
           </div>
-          <div class="progress" data-percentage="85">
+          <div class="progress" data-percentage="80">
             <div class="progress-bar"></div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skill-head">
-            <span>React / Vue (Dasar)</span>
-            <span class="skill-percent">70%</span>
+            <span>JavaScript</span><span>70%</span>
           </div>
           <div class="progress" data-percentage="70">
             <div class="progress-bar"></div>
           </div>
         </div>
 
-        <div class="skill">
-          <div class="skill-head">
-            <span>SQL & Database</span>
-            <span class="skill-percent">65%</span>
-          </div>
-          <div class="progress" data-percentage="65">
-            <div class="progress-bar"></div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section id="contact" class="section container reveal">
+
+    <!-- CONTACT -->
+    <section class="section container reveal" id="contact">
       <h2 class="section-title">Kontak</h2>
-      <p class="section-desc">Isi pesan di bawah:</p>
 
       <div class="contact-grid">
-        <form id="contact-form" class="contact-form" novalidate>
+        <form class="contact-form" id="contact-form">
+
           <div class="form-row">
             <label for="name">Nama</label>
-            <input id="name" name="name" required placeholder="Nama lengkap" />
-            <small class="error" id="error-name"></small>
+            <input type="text" id="name">
+            <div class="error" id="error-name"></div>
           </div>
 
           <div class="form-row">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" required placeholder="email@contoh.com" />
-            <small class="error" id="error-email"></small>
+            <input type="email" id="email">
+            <div class="error" id="error-email"></div>
           </div>
 
           <div class="form-row">
             <label for="message">Pesan</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
-            <small class="error" id="error-message"></small>
+            <textarea id="message" rows="4"></textarea>
+            <div class="error" id="error-message"></div>
           </div>
 
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            <button type="reset" class="btn btn-outline">Reset</button>
-          </div>
+          <button class="btn btn-primary" type="submit">Kirim</button>
 
-          <div id="form-status" class="form-status"></div>
+          <div class="form-status" id="form-status"></div>
         </form>
 
-        <aside class="contact-info">
-          <h4>Info Kontak</h4>
-          <p><strong>Email:</strong> <a href="mailto:egi@example.com">aditiyaegi632@gmail.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/egi</a></p>
-          <p><strong>GitHub:</strong> <a href="#">github.com/egi</a></p>
-        </aside>
+        <div class="contact-info">
+          Email: aditiyaegi632@gmail.com<br>
+          Lokasi: Indonesia
+        </div>
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Egi Candra Aditya — Mahasiswa Sistem Informasi</p>
-    </div>
+    <p>&copy; <span id="year"></span> Egi</p>
   </footer>
 
   <script src="script.js"></script>
