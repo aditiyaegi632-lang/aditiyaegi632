@@ -103,7 +103,7 @@ function animateProgressBars(){
    - Highlight nav link aktif berdasarkan section yang terlihat
    ---------------------------- */
 const sections = document.querySelectorAll(
-  '#about, #education, #experience, #skills, #contact'
+  '#about-detail, #education, #experience, #skills, #contact'
 );
 const spyOptions = {
   root: null,
