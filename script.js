@@ -73,7 +73,10 @@ function animateProgressBars() {
     const bar = container.querySelector('.progress-bar');
     const percentage = parseInt(container.getAttribute('data-percentage') || '0', 10);
 
-    if (bar && parseInt(bar.style.width) === 0) {
+    // FIX: hanya jalan sekali, memastikan animasi bekerja
+    if (bar && !bar.dataset.filled) {
+      bar.dataset.filled = "true";
+
       setTimeout(() => {
         bar.style.width = `${percentage}%`;
       }, 80);
