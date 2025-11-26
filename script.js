@@ -36,7 +36,21 @@ navLinks.forEach(link => {
     const target = document.querySelector(href);
 
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const headerHeight = parseInt(getComputedStyle(document.documentElement)
+                      .getPropertyValue('--header-height')) || 72;
+
+// offset dikurangi sedikit (10–15px) agar section tidak dianggap lewat tengah viewport
+const offset = headerHeight - 12;
+
+
+const elementPosition = target.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+window.scrollTo({
+  top: offsetPosition,
+  behavior: 'smooth'
+});
+
 
       // Tutup navbar mobile
       siteNav.classList.remove('open');
@@ -87,7 +101,7 @@ function animateProgressBars() {
 /* ============================
    SCROLL-SPY (Super Stable Version)
 ============================ */
-const sections = document.querySelectorAll('#about, #education, #experience, #skills, #contact');
+const sections = document.querySelectorAll('section[id]');
 
 const spyObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -103,8 +117,8 @@ const spyObserver = new IntersectionObserver((entries) => {
   });
 }, {
   root: null,
-  rootMargin: '-30% 0px -40% 0px',
-  threshold: 0.1
+  rootMargin: '-30% 0px -39% 0px',
+  threshold: 0.4
 });
 
 sections.forEach(sec => spyObserver.observe(sec));
