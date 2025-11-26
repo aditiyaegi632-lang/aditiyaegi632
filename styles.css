@@ -194,6 +194,15 @@ body {
   color: var(--muted);
 }
 
+.profile-photo {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: var(--shadow);
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
