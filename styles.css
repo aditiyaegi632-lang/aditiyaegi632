@@ -476,3 +476,32 @@ a, button { transition: var(--transition); }
   :root { font-size: 15px; }
   .header-inner { padding: .5rem 0; }
 }
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.exp-card h3 {
+  margin: 0 0 4px 0;
+}
+
+.exp-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
